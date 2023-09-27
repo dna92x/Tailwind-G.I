@@ -11,6 +11,9 @@
   <!-- Tailwind -->
   <link rel="stylesheet" href="/build/css/app.css">
 
+  <!-- swiper -->
+  <link rel="stylesheet" href="/build/css/swiper-bundle.min.css">
+
   <!-- Bootstrap 5 RTL -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
     integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous" /> -->
@@ -18,10 +21,26 @@
   <link href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="{{ asset('assets/css/owlCarousel/owl.carousel.min.css') }}" /> -->
   <!-- <link rel="stylesheet" href="{{ asset('assets/css/owlCarousel/owl.theme.default.min.css') }}" /> -->
+
   <!-- Sweet Alert2 js-->
   <!-- <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet"> -->
   <title>G.I</title>
   <style>
+    /* |*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*| */
+    /* |*|*|*|*|*|*|*|*| Swiper |*|*|*|*|*|*|*| */
+    /* |*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*| */
+
+    .swiper-slide {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      height: auto;
+      width: fit-content !important;
+    }
+
+
     /* |*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*| */
     /* |*|*|*|*|*|*|*|*| ScrollBar |*|*|*|*|*|*|*| */
     /* |*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*| */
@@ -367,7 +386,7 @@
         <div class="flex md:hidden">
           <!-- Bar Icn -->
           <a href="#" class="dna-bar-icn flex md:hidden">
-            <svg class="w-6 h-6 text-stone-600 border border-stone-600 rounded p-0.5">
+            <svg class="w-6 h-6 text-stone-600">
               <use href="#bars-4"></use>
             </svg>
           </a>
@@ -564,19 +583,60 @@
           </a>
         </div>
         <div
-        class="flex items-center flex-shrink-0 bg-stone-100 dark:bg-stone-950 shadow-md rounded-full">
-        <a href="news.html" class="text-center text-stone-400 dark:text-stone-700 px-4 md:px-8 py-1 w-full ">اخبار</a>
-      </div>
-      <div
-        class="flex items-center flex-shrink-0 bg-stone-100 dark:bg-stone-950 shadow-md rounded-full">
-        <a href="biography.html" class="text-center text-stone-400 dark:text-stone-700 px-4 md:px-8 py-1 w-full ">بیوگرافی</a>
-      </div>
-      <div
-        class="flex items-center flex-shrink-0 bg-stone-100 dark:bg-stone-950 shadow-md rounded-full">
-        <a href="school.html" class="text-center text-stone-400 dark:text-stone-700 px-4 md:px-8 py-1 w-full ">مدرسه</a>
-      </div>
+          class="flex items-center flex-shrink-0 font-iransansdnBold bg-stone-100 dark:bg-stone-950  shadow-md rounded-full">
+          <a href="biography.html"
+            class="text-center text-stone-600 dark:text-stone-400 px-4 md:px-8 py-1 w-full ">بیوگرافی</a>
+        </div>
+        <div class="flex items-center flex-shrink-0 bg-stone-100 dark:bg-stone-950 shadow-md rounded-full">
+          <a href="#" class="text-center text-stone-600 dark:text-stone-400 px-4 md:px-8 py-1 w-full ">هنرمند</a>
+        </div>
+        <div class="flex items-center flex-shrink-0 bg-stone-100 dark:bg-stone-950 shadow-md rounded-full">
+          <a href="#" class="text-center text-stone-300 dark:text-stone-700 px-4 md:px-8 py-1 w-full ">رشته شغلی</a>
+        </div>
+        <div class="flex items-center flex-shrink-0 bg-stone-100 dark:bg-stone-950 shadow-md rounded-full">
+          <a href="#" class="text-center text-stone-300 dark:text-stone-700 px-4 md:px-8 py-1 w-full ">جنسیت</a>
+        </div>
+        <div class="flex items-center flex-shrink-0 bg-stone-100 dark:bg-stone-950 shadow-md rounded-full">
+          <a href="#" class="text-center text-stone-300 dark:text-stone-700 px-4 md:px-8 py-1 w-full ">ملیت</a>
+        </div>
       </div>
     </div>
+
+    <!-- // All filters 2 \\ -->
+    <div class="swiper flex items-center border border-stone-200 dark:border-stone-950 border-t-0 h-12">
+      <div class="swiper-wrapper flex items-center space-x-2 space-x-reverse px-2">
+        <div
+          class="swiper-slide text-stone-500 hover:text-stone-800 dark:text-stone-500 dark:hover:text-stone-400  bg-stone-100 dark:bg-stone-950 border border-stone-500 hover:border-stone-800 dark:hover:border-stone-400 rounded-lg shadow-inner">
+          <a href="#" class="text-center px-2 py-1 w-full ">
+            <svg class="w-5 h-6">
+              <use href="#funnel"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="swiper-slide font-iransansdnBold bg-stone-100 dark:bg-stone-950  shadow-md rounded-full">
+          <a href="biography.html"
+            class="text-center text-stone-600 dark:text-stone-400 px-4 md:px-8 py-1 w-full ">بیوگرافی</a>
+        </div>
+        <div class="swiper-slide bg-stone-100 dark:bg-stone-950 shadow-md rounded-full">
+          <a href="#" class="text-center text-stone-600 dark:text-stone-400 px-4 md:px-8 py-1 w-full ">هنرمند</a>
+        </div>
+        <div class="swiper-slide bg-stone-100 dark:bg-stone-950 shadow-md rounded-full">
+          <a href="#" class="text-center text-stone-300 dark:text-stone-700 px-4 md:px-8 py-1 w-full ">رشته شغلی</a>
+        </div>
+        <div class="swiper-slide bg-stone-100 dark:bg-stone-950 shadow-md rounded-full">
+          <a href="#" class="text-center text-stone-300 dark:text-stone-700 px-4 md:px-8 py-1 w-full ">جنسیت</a>
+        </div>
+        <div class="swiper-slide bg-stone-100 dark:bg-stone-950 shadow-md rounded-full">
+          <a href="#" class="text-center text-stone-300 dark:text-stone-700 px-4 md:px-8 py-1 w-full ">ملیت</a>
+        </div>
+      </div>
+      <!-- If we need navigation buttons -->
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+
+    </div>
+
+
     <!-- // Advance filters \\ -->
     <div class="border border-stone-200 dark:border-stone-950 border-t-0 h-12">
       <div class="flex justify-between mx-2 overflow-x-auto">
@@ -614,71 +674,321 @@
   </section>
 
   <!-- ++++++++++++++++++++++|| MAIN ||++++++++++++++++++++++-->
-  <main class="bg-white dark:bg-black border border-stone-200 dark:border-stone-950 border-t-0 p-4 mx-auto">
+  <main class="bg-white dark:bg-black border border-stone-200 dark:border-stone-950 border-t-0 p-4 mb-10  mx-auto">
     <div class="  bg-stone-100 dark:bg-stone-950 px-2 p-1 mb-3 rounded">
-      <span class="text-stone-500">صفحه اصلی  </span>
+      <span class="text-stone-500 dark:text-stone-700">صفحه اصلی </span>
+      <span class="text-stone-700 dark:text-stone-500">\ بیوگرافـــی</span>
     </div>
-    <!-- // Boxes \\-->
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 child:dark:bg-stone-950">
+    <!-- // Boxes list-style \\-->
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 child:dark:bg-stone-950">
       <!-- box-1 -->
       <div class="border border-stone-200 dark:border-stone-900 p-1 mb-1 shadow-lg rounded">
         <!-- img | title -->
         <div class="flex pb-1">
-          <img class="w-3/12 h-36 object-fill rounded"
-            src="img/profiles/مریم+میرزاخانی.jpg" alt="">
+          <img class="w-3/12 h-36 object-fill rounded" loading="lazy" src="img/profiles/مریم+میرزاخانی.jpg" alt="">
           <div class="w-9/12 h-36 overflow-y-auto p-2 rounded mr-1">
+            <h5 class="font-iransansdnBold text-stone-700 dark:text-stone-400 mb-1 line-clamp-1">مریم میرزاخانی</h5>
+            <p
+              class="font-iransansdn text-[13px]/6 md:text-sm/6 text-stone-600 dark:text-stone-500 text-justify tracking-tight">
+              (۲۲ اردیبهشت
+              ۱۳۵۶ – ۲۳ تیر
+              ۱۳۹۶) ریاضی‌دان ایرانی و استاد دانشگاه استنفورد بود. میرزاخانی
+              در سال ۲۰۱۴ به دلیل کنش‌گری در زمینه «دینامیک و هندسه سطوح ریمانی و فضاهای پیمانه‌ای آن‌ها» برنده مدال
+              فیلدز شد که بالاترین جایزه در ریاضیات است. وی اولین زن[۴] و ایرانی برندهٔ مدال فیلدز است.[۵]
 
-            <h5 class="font-iransansdnBold text-stone-700 dark:text-stone-400">مریم میرزاخانی</p>
-              <p class="font-iransansdn text-stone-600 dark:text-stone-500 text-justify tracking-tight"> (۲۲ اردیبهشت
-                ۱۳۵۶ – ۲۳ تیر
-                ۱۳۹۶) ریاضی‌دان ایرانی و استاد دانشگاه استنفورد بود. میرزاخانی
-                در سال ۲۰۱۴ به دلیل کنش‌گری در زمینه «دینامیک و هندسه سطوح ریمانی و فضاهای پیمانه‌ای آن‌ها» برنده مدال
-                فیلدز شد که بالاترین جایزه در ریاضیات است. وی اولین زن[۴] و ایرانی برندهٔ مدال فیلدز است.[۵]
+              زمینهٔ تحقیقاتی او مشتمل بر نظریه تایشمولر، هندسه هذلولوی، نظریه ارگودیک و هندسه سیمپلکتیک بود.
 
-                زمینهٔ تحقیقاتی او مشتمل بر نظریه تایشمولر، هندسه هذلولوی، نظریه ارگودیک و هندسه سیمپلکتیک بود.
+              مریم میرزاخانی در دوران تحصیل در دبیرستان فرزانگان تهران، برندهٔ مدال طلای المپیاد جهانی ریاضی در
+              سال‌های
+              ۱۹۹۴ (هنگ‌کنگ) و ۱۹۹۵ (کانادا) شد و در این سال به‌عنوان نخستین دانش‌آموز ایرانی نمرهٔ کامل را به دست
+              آورد.[۲] وی نخستین دانش آموز ایرانی بود که دو سال مدال طلا گرفت.[۶][۷]
 
-                مریم میرزاخانی در دوران تحصیل در دبیرستان فرزانگان تهران، برندهٔ مدال طلای المپیاد جهانی ریاضی در
-                سال‌های
-                ۱۹۹۴ (هنگ‌کنگ) و ۱۹۹۵ (کانادا) شد و در این سال به‌عنوان نخستین دانش‌آموز ایرانی نمرهٔ کامل را به دست
-                آورد.[۲] وی نخستین دانش آموز ایرانی بود که دو سال مدال طلا گرفت.[۶][۷]
+              او سپس در سال ۱۹۹۹ مدرک کارشناسی خود را در رشتهٔ ریاضی از دانشگاه شریف و دکتریِ خود را در سال ۲۰۰۴ از
+              دانشگاه هاروارد به سرپرستی کورتیس مک‌مولن، از برندگان مدال فیلدز، گرفت.[۸]
 
-                او سپس در سال ۱۹۹۹ مدرک کارشناسی خود را در رشتهٔ ریاضی از دانشگاه شریف و دکتریِ خود را در سال ۲۰۰۴ از
-                دانشگاه هاروارد به سرپرستی کورتیس مک‌مولن، از برندگان مدال فیلدز، گرفت.[۸]
+              از مریم میرزاخانی به‌عنوان یکی از ده ذهنِ جوان برگزیدهٔ سال ۲۰۰۵ از سوی نشریهٔ پاپیولار ساینس در
+              آمریکا
+              و
+              ذهن برتر در رشتهٔ ریاضیات تجلیل شد.[۹] میرزاخانی برنده جوایزی چون جایزه ستر[۱۰][۱۱] از انجمن ریاضی
+              آمریکا
+              در سال ۲۰۱۳ و جایزهٔ کلی بود. وی از یازدهم شهریورماه ۱۳۸۷ (اول سپتامبر ۲۰۰۸) در دانشگاه استنفورد استاد
+              دانشگاه و پژوهشگر رشتهٔ ریاضیات بود.[۱۲] پیش از این، او استاد دانشگاه پرینستون بود.
 
-                از مریم میرزاخانی به‌عنوان یکی از ده ذهنِ جوان برگزیدهٔ سال ۲۰۰۵ از سوی نشریهٔ پاپیولار ساینس در
-                آمریکا
-                و
-                ذهن برتر در رشتهٔ ریاضیات تجلیل شد.[۹] میرزاخانی برنده جوایزی چون جایزه ستر[۱۰][۱۱] از انجمن ریاضی
-                آمریکا
-                در سال ۲۰۱۳ و جایزهٔ کلی بود. وی از یازدهم شهریورماه ۱۳۸۷ (اول سپتامبر ۲۰۰۸) در دانشگاه استنفورد استاد
-                دانشگاه و پژوهشگر رشتهٔ ریاضیات بود.[۱۲] پیش از این، او استاد دانشگاه پرینستون بود.
-
-                سالروز تولد مریم میرزاخانی ۲۲ اردیبهشت (دوازدهم مه) از سوی اتحادیه بین‌المللی انجمن‌های ریاضی جهان با
-                پیشنهاد کمیته بانوان انجمن ریاضی ایران به عنوان روز جهانی زن در ریاضیات نام‌گذاری شد.[۱۳]</p>
+              سالروز تولد مریم میرزاخانی ۲۲ اردیبهشت (دوازدهم مه) از سوی اتحادیه بین‌المللی انجمن‌های ریاضی جهان با
+              پیشنهاد کمیته بانوان انجمن ریاضی ایران به عنوان روز جهانی زن در ریاضیات نام‌گذاری شد.[۱۳]</p>
           </div>
         </div>
         <!-- 6 btn -->
-        <div class="flex justify-between items-center border border-dashed border-stone-300 dark:border-stone-900 rounded">
+        <div
+          class="flex justify-between items-center border border-dashed border-stone-300 dark:border-stone-900 rounded">
           <div class="flex">
-            <img class="w-10 h-10" src="img/icon/whats1.png" alt="">
-            <img class="w-10 h-10" src="img/icon/teleg.png" alt="">
-            <img class="w-10 h-10" src="img/icon/insta1.png" alt="">
+            <img class="w-8 h-8" src="img/icon/whats1.png" alt="">
+            <img class="w-8 h-8" src="img/icon/teleg.png" alt="">
+            <img class="w-8 h-8" src="img/icon/insta1.png" alt="">
           </div>
           <div class="flex">
-            <img class="w-8 h-8" src="img/icon/heartEmpty.png" alt="">
-            <img class="w-8 h-8" src="img/icon/eye.png" alt="">
-            <img class="w-8 h-8" src="img/icon/edit.png" alt="">
+            <img class="w-6 h-6" src="img/icon/heartEmpty.png" alt="">
+            <img class="w-6 h-6" src="img/icon/eye.png" alt="">
+            <img class="w-6 h-6" src="img/icon/edit.png" alt="">
           </div>
         </div>
       </div>
       <!-- box-2 -->
-      
+      <div class="border border-stone-200 dark:border-stone-900 p-1 mb-1 shadow-lg rounded">
+        <!-- img | title -->
+        <div class="flex pb-1">
+          <img class="w-3/12 h-36 object-fill rounded" src="img/profiles/photo_2022-08-01_03-14-50.jpg" alt="">
+          <div class="w-9/12 h-36 overflow-y-auto p-2 rounded mr-1">
+            <h5 class="font-iransansdnBold text-stone-700 dark:text-stone-400 mb-1 line-clamp-1">رامی سعید ملک</h5>
+            <p
+              class="font-iransansdn text-[13px]/6 md:text-sm/6 text-stone-600 dark:text-stone-500 text-justify tracking-tight">
+              (زادهٔ ۱۲ مه
+              ۱۹۸۱) بازیگر
+              آمریکایی
+              است. او افتخارات مختلفی از قبیل یک جایزهٔ اسکار، یک جایزهٔ فیلم بفتا، یک جایزهٔ گلدن گلوب و یک جایزهٔ
+              امی
+              ساعات پربیننده برنده شده‌است. مجلهٔ تایم در سال ۲۰۱۹ ملک را یکی از ۱۰۰ شخص تاثیرگذار در جهان معرفی
+              کرد.
+
+              ملک از والدین مهاجر مصری در تورانس، کالیفرنیا به دنیا آمد و در دانشگاه تورانس، کالیفرنیا تئاتر خواند.
+              او
+              برای بازی در مجموعهٔ آقای ربات (۲۰۱۵–۲۰۱۹) از شبکهٔ یواس‌ای نتورک که برایش جایزه امی ساعات پربیننده
+              برای
+              بهترین بازیگر نقش اول مرد در مجموعه تلویزیونی درام را دریافت کرد و بوهمین راپسودی (۲۰۱۸) که برایش
+              جوایز
+              اسکار، گلدن گلوب و بفتای بهترین بازیگر مرد را دریافت کرد شناخته می‌شود. او اولین بازیگر مصری است که
+              برنده
+              جایزه اسکار بهترین بازیگر مرد شده‌است.[۱]</p>
+          </div>
+        </div>
+        <!-- 6 btn -->
+        <div
+          class="flex justify-between items-center border  border-dashed border-stone-300 dark:border-stone-900 rounded">
+          <div class="flex">
+            <img class="w-8 h-8" src="img/icon/whats1.png" alt="">
+            <img class="w-8 h-8" src="img/icon/teleg.png" alt="">
+            <img class="w-8 h-8" src="img/icon/insta1.png" alt="">
+          </div>
+          <div class="flex">
+            <img class="w-6 h-6" src="img/icon/heartEmpty.png" alt="">
+            <img class="w-6 h-6" src="img/icon/eye.png" alt="">
+            <img class="w-6 h-6" src="img/icon/edit.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-
+    <!-- // Boxes window-style \\-->
+    <div class="grid grid-cols-3 md:grid-cols-6 xl:grid-cols-9 gap-x-1 gap-y-3 child:dark:bg-stone-950">
+      <!-- box-1 -->
+      <div class="border border-stone-200 dark:border-stone-900 p-1 mb-1 shadow-lg rounded">
+        <!-- img | title -->
+        <div class="flex flex-col">
+          <img class="h-36 object-fill rounded-t" loading="lazy" src="img/profiles/مریم+میرزاخانی.jpg" alt="">
+          <h5 class="font-iransansdnBold text-stone-700 dark:text-stone-400 py-1 line-clamp-1">مریم میرزاخانی</h5>
+        </div>
+        <!-- 3 btn -->
+        <div
+          class="flex justify-between items-center border border-dashed border-stone-300 dark:border-stone-900 rounded">
+          <div class="flex">
+            <img class="w-8 h-8" src="img/icon/whats1.png" alt="">
+            <img class="w-8 h-8" src="img/icon/teleg.png" alt="">
+            <img class="w-8 h-8" src="img/icon/insta1.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- box-2 -->
+      <div class="border border-stone-200 dark:border-stone-900 p-1 mb-1 shadow-lg rounded">
+        <!-- img | title -->
+        <div class="flex flex-col">
+          <img class="h-36 object-fill rounded-t" loading="lazy" src="img/profiles/photo_2022-08-01_03-14-50.jpg"
+            alt="">
+          <h5 class="font-iransansdnBold text-stone-700 dark:text-stone-400 py-1 line-clamp-1">رامی سعید مالک</h5>
+        </div>
+        <!-- 3 btn -->
+        <div
+          class="flex justify-between items-center border border-dashed border-stone-300 dark:border-stone-900 rounded">
+          <div class="flex">
+            <img class="w-8 h-8" src="img/icon/whats1.png" alt="">
+            <img class="w-8 h-8" src="img/icon/teleg.png" alt="">
+            <img class="w-8 h-8" src="img/icon/insta1.png" alt="">
+          </div>
+        </div>
+      </div>
       <!-- box-3 -->
-
-      <!-- box-4 -->
+      <div class="border border-stone-200 dark:border-stone-900 p-1 mb-1 shadow-lg rounded">
+        <!-- img | title -->
+        <div class="flex flex-col">
+          <img class="h-36 object-fill rounded-t" loading="lazy" src="img/profiles/ax-profile.jpg" alt="">
+          <h5 class="font-iransansdnBold text-stone-700 dark:text-stone-400 py-1 line-clamp-1">علی سورنا</h5>
+        </div>
+        <!-- 3 btn -->
+        <div
+          class="flex justify-between items-center border border-dashed border-stone-300 dark:border-stone-900 rounded">
+          <div class="flex">
+            <img class="w-8 h-8" src="img/icon/whats1.png" alt="">
+            <img class="w-8 h-8" src="img/icon/teleg.png" alt="">
+            <img class="w-8 h-8" src="img/icon/insta1.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- box-1 -->
+      <div class="border border-stone-200 dark:border-stone-900 p-1 mb-1 shadow-lg rounded">
+        <!-- img | title -->
+        <div class="flex flex-col">
+          <img class="h-36 object-fill rounded-t" loading="lazy" src="img/profiles/31.jpg" alt="">
+          <h5 class="font-iransansdnBold text-stone-700 dark:text-stone-400 py-1 line-clamp-1">مریم میرزاخانی</h5>
+        </div>
+        <!-- 3 btn -->
+        <div
+          class="flex justify-between items-center border border-dashed border-stone-300 dark:border-stone-900 rounded">
+          <div class="flex">
+            <img class="w-8 h-8" src="img/icon/whats1.png" alt="">
+            <img class="w-8 h-8" src="img/icon/teleg.png" alt="">
+            <img class="w-8 h-8" src="img/icon/insta1.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- box-2 -->
+      <div class="border border-stone-200 dark:border-stone-900 p-1 mb-1 shadow-lg rounded">
+        <!-- img | title -->
+        <div class="flex flex-col">
+          <img class="h-36 object-fill rounded-t" loading="lazy" src="img/profiles/photo_2022-07-25_14-27-27.jpg"
+            alt="">
+          <h5 class="font-iransansdnBold text-stone-700 dark:text-stone-400 py-1 line-clamp-1">رامی سعید مالک</h5>
+        </div>
+        <!-- 3 btn -->
+        <div
+          class="flex justify-between items-center border border-dashed border-stone-300 dark:border-stone-900 rounded">
+          <div class="flex">
+            <img class="w-8 h-8" src="img/icon/whats1.png" alt="">
+            <img class="w-8 h-8" src="img/icon/teleg.png" alt="">
+            <img class="w-8 h-8" src="img/icon/insta1.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- box-3 -->
+      <div class="border border-stone-200 dark:border-stone-900 p-1 mb-1 shadow-lg rounded">
+        <!-- img | title -->
+        <div class="flex flex-col">
+          <img class="h-36 object-fill rounded-t" loading="lazy" src="img/profiles/52.jpg" alt="">
+          <h5 class="font-iransansdnBold text-stone-700 dark:text-stone-400 py-1 line-clamp-1">علی سورنا</h5>
+        </div>
+        <!-- 3 btn -->
+        <div
+          class="flex justify-between items-center border border-dashed border-stone-300 dark:border-stone-900 rounded">
+          <div class="flex">
+            <img class="w-8 h-8" src="img/icon/whats1.png" alt="">
+            <img class="w-8 h-8" src="img/icon/teleg.png" alt="">
+            <img class="w-8 h-8" src="img/icon/insta1.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- box-1 -->
+      <div class="border border-stone-200 dark:border-stone-900 p-1 mb-1 shadow-lg rounded">
+        <!-- img | title -->
+        <div class="flex flex-col">
+          <img class="h-36 object-fill rounded-t" loading="lazy" src="img/profiles/17.jpg" alt="">
+          <h5 class="font-iransansdnBold text-stone-700 dark:text-stone-400 py-1 line-clamp-1">مریم میرزاخانی</h5>
+        </div>
+        <!-- 3 btn -->
+        <div
+          class="flex justify-between items-center border border-dashed border-stone-300 dark:border-stone-900 rounded">
+          <div class="flex">
+            <img class="w-8 h-8" src="img/icon/whats1.png" alt="">
+            <img class="w-8 h-8" src="img/icon/teleg.png" alt="">
+            <img class="w-8 h-8" src="img/icon/insta1.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- box-2 -->
+      <div class="border border-stone-200 dark:border-stone-900 p-1 mb-1 shadow-lg rounded">
+        <!-- img | title -->
+        <div class="flex flex-col">
+          <img class="h-36 object-fill rounded-t" loading="lazy" src="img/profiles/photo_2022-08-01_03-14-50.jpg"
+            alt="">
+          <h5 class="font-iransansdnBold text-stone-700 dark:text-stone-400 py-1 line-clamp-1">رامی سعید مالک</h5>
+        </div>
+        <!-- 3 btn -->
+        <div
+          class="flex justify-between items-center border border-dashed border-stone-300 dark:border-stone-900 rounded">
+          <div class="flex">
+            <img class="w-8 h-8" src="img/icon/whats1.png" alt="">
+            <img class="w-8 h-8" src="img/icon/teleg.png" alt="">
+            <img class="w-8 h-8" src="img/icon/insta1.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- box-3 -->
+      <div class="border border-stone-200 dark:border-stone-900 p-1 mb-1 shadow-lg rounded">
+        <!-- img | title -->
+        <div class="flex flex-col">
+          <img class="h-36 object-fill rounded-t" loading="lazy" src="img/profiles/ax-profile.jpg" alt="">
+          <h5 class="font-iransansdnBold text-stone-700 dark:text-stone-400 py-1 line-clamp-1">علی سورنا</h5>
+        </div>
+        <!-- 3 btn -->
+        <div
+          class="flex justify-between items-center border border-dashed border-stone-300 dark:border-stone-900 rounded">
+          <div class="flex">
+            <img class="w-8 h-8" src="img/icon/whats1.png" alt="">
+            <img class="w-8 h-8" src="img/icon/teleg.png" alt="">
+            <img class="w-8 h-8" src="img/icon/insta1.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- box-1 -->
+      <div class="border border-stone-200 dark:border-stone-900 p-1 mb-1 shadow-lg rounded">
+        <!-- img | title -->
+        <div class="flex flex-col">
+          <img class="h-36 object-fill rounded-t" loading="lazy" src="img/profiles/مریم+میرزاخانی.jpg" alt="">
+          <h5 class="font-iransansdnBold text-stone-700 dark:text-stone-400 py-1 line-clamp-1">مریم میرزاخانی</h5>
+        </div>
+        <!-- 3 btn -->
+        <div
+          class="flex justify-between items-center border border-dashed border-stone-300 dark:border-stone-900 rounded">
+          <div class="flex">
+            <img class="w-8 h-8" src="img/icon/whats1.png" alt="">
+            <img class="w-8 h-8" src="img/icon/teleg.png" alt="">
+            <img class="w-8 h-8" src="img/icon/insta1.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- box-2 -->
+      <div class="border border-stone-200 dark:border-stone-900 p-1 mb-1 shadow-lg rounded">
+        <!-- img | title -->
+        <div class="flex flex-col">
+          <img class="h-36 object-fill rounded-t" loading="lazy" src="img/profiles/photo_2022-08-01_03-14-50.jpg"
+            alt="">
+          <h5 class="font-iransansdnBold text-stone-700 dark:text-stone-400 py-1 line-clamp-1">رامی سعید مالک</h5>
+        </div>
+        <!-- 3 btn -->
+        <div
+          class="flex justify-between items-center border border-dashed border-stone-300 dark:border-stone-900 rounded">
+          <div class="flex">
+            <img class="w-8 h-8" src="img/icon/whats1.png" alt="">
+            <img class="w-8 h-8" src="img/icon/teleg.png" alt="">
+            <img class="w-8 h-8" src="img/icon/insta1.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- box-3 -->
+      <div class="border border-stone-200 dark:border-stone-900 p-1 mb-1 shadow-lg rounded">
+        <!-- img | title -->
+        <div class="flex flex-col">
+          <img class="h-36 object-fill rounded-t" loading="lazy" src="img/profiles/ax-profile.jpg" alt="">
+          <h5 class="font-iransansdnBold text-stone-700 dark:text-stone-400 py-1 line-clamp-1">علی سورنا</h5>
+        </div>
+        <!-- 3 btn -->
+        <div
+          class="flex justify-between items-center border border-dashed border-stone-300 dark:border-stone-900 rounded">
+          <div class="flex">
+            <img class="w-8 h-8" src="img/icon/whats1.png" alt="">
+            <img class="w-8 h-8" src="img/icon/teleg.png" alt="">
+            <img class="w-8 h-8" src="img/icon/insta1.png" alt="">
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -694,6 +1004,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <!-- owl carousel cdn-->
   <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+  <!-- swiper -->
+  <script src="js/swiper-bundle.min.js"></script>
   <!-- app -->
   <script src="js/app.js"></script>
   <!-- owl carousel -->
@@ -718,6 +1030,16 @@
           }
         }
       });
+    });
+  </script>
+  <!-- Initialize Swiper -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // loop: true,
+      // slidesPerView: 3,
+      // freeMode: true,
+      spaceBetween: 1,
+
     });
   </script>
 </body>

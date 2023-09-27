@@ -1,3 +1,94 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    /* iransansdn */
+    @font-face {
+        font-family: "iransansdn light";
+        font-display: swap;
+        font-style: normal;
+        font-weight: 300;
+        src: local("iransansdn light") , url('/build/fonts/IRANSansDN/eot/iransansdnweblight.eot'),
+             url('/build/fonts/IRANSansDN/woff2/iransansdnweblight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+             url('/build/fonts/IRANSansDN/woff/iransansdnweblight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+             url('/build/fonts/IRANSansDN/ttf/iransansdnweblight.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: "iransansdn";
+        font-display: swap;
+        font-style: normal;
+        font-weight: normal;
+        src: local("iransansdn") , url('/build/fonts/IRANSansDN/fonts/eot/iransansdnweb.eot'),
+             url('/build/fonts/IRANSansDN/woff2/iransansdnweb.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+             url('/build/fonts/IRANSansDN/woff/iransansdnweb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+             url('/build/fonts/IRANSansDN/ttf/iransansdnwebregular.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: "iransansdn bold";
+        font-display: swap;
+        font-style: normal;
+        font-weight: bold;
+        src: local("iransansdn bold") , url('/build/fonts/IRANSansDN/eot/iransansdnwebbold.eot'),
+             url('/build/fonts/IRANSansDN/woff2/iransansdnwebbold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+             url('/build/fonts/IRANSansDN/woff/iransansdnwebbold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+             url('/build/fonts/IRANSansDN/ttf/iransansdnwebbold.ttf') format('truetype');
+    }
+    /* iransans */
+    @font-face {
+        font-family: "iransans";
+        font-display: swap;
+        font-style: normal;
+        font-weight: bold;
+        src: local("iransansdn bold") , url('/build/fonts/iransans/woff2/IRANSansWeb\(FaNum\).woff2') format('woff2'),
+    }
+    @font-face {
+        font-family: "iransans ultraLight";
+        font-display: swap;
+        font-style: normal;
+        font-weight: 300;
+        src: local("iransansdn light") , url('/build/fonts/iransans/woff2/IRANSansWeb\(FaNum\)_UltraLight.woff2') format    ('woff2'),
+    }
+    @font-face {
+        font-family: "iransans light";
+        font-display: swap;
+        font-style: normal;
+        font-weight: 300;
+        src: local("iransansdn light") , url('/build/fonts/iransans/woff2/IRANSansWeb\(FaNum\)_Light.woff2') format('woff2'), 
+    }
+    @font-face {
+        font-family: "iransans medium";
+        font-display: swap;
+        font-style: normal;
+        font-weight: normal;
+        src: local("iransansdn") , url('/build/fonts/iransans/woff2/IRANSansWeb\(FaNum\)_Medium.woff2') format('woff2'),
+    }
+    @font-face {
+        font-family: "iransans bold";
+        font-display: swap;
+        font-style: normal;
+        font-weight: bold;
+        src: local("iransansdn bold") , url('/build/fonts/iransans/woff2/IRANSansWeb\(FaNum\)_Bold.woff2') format('woff2'),
+    }    
+}
+
+@layer components {
+    /* Menu */
+    .dna-menu-li {
+        @apply text-stone-700 hover:bg-stone-200 dark:hover:text-stone-500 dark:hover:bg-stone-900 rounded-lg
+    }
+    
+    .dna-menu-a {
+        @apply inline-block px-2 md:px-3 py-1 md:py-2
+    }
+
+
+    /*  */
+    .overlay {
+        @apply md:hidden invisible opacity-0 fixed inset-0 bg-black/70 w-full h-full z-10 transition-all
+    }
+    .overlay--visible {
+        @apply visible opacity-100
+    }
+
+}
